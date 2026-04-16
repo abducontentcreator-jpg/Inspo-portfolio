@@ -14,10 +14,18 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
+          className="relative"
         >
-          <h2 className="text-4xl md:text-6xl font-display font-extrabold tracking-tighter leading-tight">
-            Design is a <span className="text-gold italic">technical</span> discipline, not an artistic whim.
-          </h2>
+          <div className="relative aspect-[3/4] overflow-hidden border border-white/10 group">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              alt="Abdurahman" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gold/10 mix-blend-overlay"></div>
+          </div>
+          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold/5 -z-10"></div>
         </motion.div>
 
         <motion.div
@@ -27,6 +35,9 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="space-y-8"
         >
+          <h2 className="text-4xl md:text-6xl font-display font-extrabold tracking-tighter leading-tight">
+            Design is a <span className="text-gold italic">technical</span> discipline, not an artistic whim.
+          </h2>
           <p className="text-xl text-white/80 font-light leading-relaxed">
             I'm Abdu — brand identity designer and co-founder of SHURUQ Enterprise. I work at the intersection of visual intelligence and brand strategy.
           </p>

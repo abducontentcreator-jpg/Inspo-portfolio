@@ -18,7 +18,20 @@ export default function Contact() {
             </p>
             
             <div className="mt-12 space-y-4">
-              <p className="text-sm uppercase tracking-widest text-white/40 font-bold">Direct Contact</p>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden border border-gold/30">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="Abdu" 
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div>
+                  <p className="text-sm uppercase tracking-widest text-white/40 font-bold">Direct Contact</p>
+                  <p className="text-gold font-bold">Abdurahman (Abdu)</p>
+                </div>
+              </div>
               <a href="mailto:abdu@shuruq.agency" className="text-2xl font-display font-bold hover:text-gold transition-colors block">
                 abdu@shuruq.agency
               </a>
